@@ -154,9 +154,9 @@
 
   <select id="checkUserName" resultType="int" parameterType="string">
     select count(1) from mmall_user
-    where username=#{username}
+    where uername=#{username}
   </select>
-  <select id="checkEmail" resultType="int" parameterType="string">
+  <select id="checkUserEmail" resultType="int" parameterType="string">
     select count(1) from mmall_user
     where email=#{email}
   </select>
@@ -166,7 +166,7 @@
     <include refid="Base_Column_List"/>
     from mmall_user
     where username=#{username}
-    and password=#{password}
+    and password=#{passwrod}
   </select>
   <select id="selectQuestionByUsername" resultType="string" parameterType="string">
         select question
